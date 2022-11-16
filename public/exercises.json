@@ -1,0 +1,44 @@
+[
+    {
+      "id": "124e13b9-2d54-41b2f-a74d-a77b362d6eada",
+      "name": "Push Up",
+      "age":"20-25",
+      "img": "https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "time": 30
+    },
+    {
+      "id": "124e13b9-2d54-41b2f-a74d-a77b362d6eadb",
+      "name": "Sit Up",
+      "age":"20-30",
+      "img": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "time": 50
+    },
+    {
+      "id": "124e13b9-2d54-41b2f-a74d-a77b362d6eadc",
+      "name": "Weight Lifting",
+      "age":"25-40",
+      "img": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "time": 60
+    },
+    {
+      "id": "124e13b9-2d54-41b2f-a74d-a77b362d6eadd",
+      "name": "Running",
+      "age":"20-60",
+      "img": "https://images.unsplash.com/photo-1483721310020-03333e577078?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1228&q=80",
+      "time": 90
+    },
+    {
+      "id": "124e13b9-2d54-41b2f-a74d-a77b362d6eade",
+      "name": "Skipping",
+      "age":"20-45",
+      "img": "https://images.unsplash.com/photo-1514994667787-b48ca37155f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80",
+      "time": 100
+    },
+    {
+      "id": "124e13b9-2d54-41b2f-a74d-a77b362d6eadf",
+      "name": "Pull Up",
+      "age":"20-20",
+      "img": "https://images.unsplash.com/photo-1605296867424-35fc25c9212a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "time": 35
+    }    
+]

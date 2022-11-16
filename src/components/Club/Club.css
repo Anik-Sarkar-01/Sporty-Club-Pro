@@ -1,0 +1,13 @@
+.club-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.exercises-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    background-color: #ECEEF0;
+}
+.info-container{
+    background-color: #ffffff;
+}
