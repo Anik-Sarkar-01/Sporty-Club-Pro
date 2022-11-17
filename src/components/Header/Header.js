@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../../images/logo.png';
 import './Header.css';
 
+// Header Component
 const Header = () => {
     return (
         <nav className='header-container'>
