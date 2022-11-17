@@ -1,42 +1,39 @@
 // use local storage to manage break time data
-const addToDb = id =>{
+const addToDb = b_time => {
     let breakTime = {};
-
     //get the time from local storage
     const storedTime = localStorage.getItem('break-time');
-    if(storedTime){
+    if (storedTime) {
         breakTime = JSON.parse(storedTime);
     }
-
     // add time
-    const time = breakTime[id];
-    if(time){
+    const time = breakTime[b_time];
+    if (time) {
         const newTime = time + 1;
-        breakTime[id] = newTime;
+        breakTime[b_time] = newTime;
     }
-    else{
-        breakTime[id] = 1;
+    else {
+        breakTime[b_time] = 1;
     }
     localStorage.setItem('break-time', JSON.stringify(breakTime));
 }
 
-const removeFromDb = id =>{
+const getStoredTime = () => {
+    let breakTime = {};
+    //get the time from local storage
     const storedTime = localStorage.getItem('break-time');
-    if(storedTime){
-        const breakTime = JSON.parse(storedTime);
-        if(id in breakTime){
-            delete breakTime[id];
-            localStorage.setItem('break-time', JSON.stringify(breakTime));
-        }
+    if (storedTime) {
+        breakTime = JSON.parse(storedTime);
     }
+    return breakTime;
 }
 
-const deleteBreakTime = () =>{
+const deleteBreakTime = () => {
     localStorage.removeItem('break-time');
 }
 
 export {
-    addToDb, 
-    removeFromDb,
+    addToDb,
+    getStoredTime,
     deleteBreakTime
 }

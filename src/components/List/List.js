@@ -1,21 +1,31 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './List.css';
 import person from '../../images/person.jpg'
 import Toast from '../Toast/Toast';
-import { addToDb } from '../../utilities/fakedb';
+import { addToDb, getStoredTime, deleteBreakTime } from '../../utilities/fakedb';
 
 const List = (props) => {
-    const [breakTime,setBreakTime] = useState(0)
-    const {list} = props;
+    const { list } = props;
+    const [breakTime, setBreakTime] = useState(0)
+    useEffect(() => {
+        const storedTime = getStoredTime();
+        for (const time in storedTime) {
+            setBreakTime(time);
+        }
+    }, [])
+
     let totalTime = 0;
-    for(const info of list){
+    for (const info of list) {
         totalTime = totalTime + info.time;
     }
 
     const setBreak = (time) => {
         setBreakTime(time);
+        deleteBreakTime();
         addToDb(time);
     }
+
+
 
     return (
         <div className='list'>

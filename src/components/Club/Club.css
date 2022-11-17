@@ -6,8 +6,18 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
-    background-color: #ECEEF0;
+    background-color: #242b2ef1;
 }
 .info-container{
     background-color: #ffffff;
+}
+
+@media only screen and (max-width: 700px) {
+    .club-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .exercises-container{
+        grid-template-columns: repeat(1,1fr);
+    }
 }

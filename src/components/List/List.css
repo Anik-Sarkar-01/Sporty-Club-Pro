@@ -18,17 +18,19 @@
 .physical-info {
     display: flex;
     justify-content: space-evenly;
-    background-color: #ECEEF0;
+    background-color: #242b2ef1;
     border-radius: 20px;
     margin-top: 20px;
+    color: #ffffff;
 }
 
 .break-info {
     display: flex;
     justify-content: space-evenly;
-    background-color: #ECEEF0;
+    background-color: #242b2ef1;
     border-radius: 20px;
     margin-top: 20px;
+    color: #ffffff;
 }
 
 .break-info h3 {
@@ -45,16 +47,18 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #ECEEF0;
+    background-color: #242b2ef1;
     border-radius: 20px;
     margin-top: 20px;
+    color: #ffffff;
 }
 
 .break-time {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: #ECEEF0;
+    background-color: #242b2ef1;
     border-radius: 20px;
     margin-top: 20px;
+    color: #ffffff;
 }

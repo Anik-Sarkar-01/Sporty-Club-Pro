@@ -18,7 +18,7 @@ const Toast = () => {
     return (
         <div className='activity-btn-container'>
             <button className='activity-btn' onClick={notify}><p>Activity Completed!</p></button>
-            <ToastContainer/>
+            <ToastContainer />
         </div>
     );
 };

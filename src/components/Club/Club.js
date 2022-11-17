@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Exercise from '../Exercise/Exercise';
 import Header from '../Header/Header';
 import List from '../List/List';
+import Question from '../Question/Question';
 import './Club.css';
 
 const Club = () => {
@@ -19,21 +20,23 @@ const Club = () => {
     }
 
     return (
-        <div className='club-container'>
-
-            <div className="exercises-container">
-                <Header></Header>
-                {
-                    exercises.map(exercise => <Exercise
-                        key={exercise.id}
-                        handleAddToList={handleAddToList}
-                        exercise={exercise}
-                    ></Exercise>)
-                }
-            </div>
-            <div className="info-container">
+        <div>
+            <Header></Header>
+            <div className='club-container'>
+                <div className="exercises-container">
+                    {
+                        exercises.map(exercise => <Exercise
+                            key={exercise.id}
+                            handleAddToList={handleAddToList}
+                            exercise={exercise}
+                        ></Exercise>)
+                    }
+                </div>
+                <div className="info-container">
                     <List list={list}></List>
+                </div>
             </div>
+            <Question></Question>
         </div>
     );
 };
