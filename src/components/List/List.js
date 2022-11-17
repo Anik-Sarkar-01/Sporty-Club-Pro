@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './List.css';
 import person from '../../images/person.jpg'
 import Toast from '../Toast/Toast';
+import { addToDb } from '../../utilities/fakedb';
 
 const List = (props) => {
     const [breakTime,setBreakTime] = useState(0)
@@ -13,6 +14,7 @@ const List = (props) => {
 
     const setBreak = (time) => {
         setBreakTime(time);
+        addToDb(time);
     }
 
     return (
