@@ -7,6 +7,8 @@
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
     background-color: #242b2ef1;
+    border-radius: 8px;
+    margin: 0px 10px;
 }
 .info-container{
     background-color: #ffffff;
