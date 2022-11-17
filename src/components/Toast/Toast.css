@@ -1,0 +1,13 @@
+.activity-btn-container{
+    display: flex;
+    justify-content: center;
+}
+.activity-btn{
+    margin-top: 20px;
+    background-color: #D82E2F;
+    border: none;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 15px;
+    padding: 0px 80px;
+}

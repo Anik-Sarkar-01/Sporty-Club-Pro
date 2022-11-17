@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './List.css';
 import person from '../../images/person.jpg'
+import Toast from '../Toast/Toast';
 
 const List = (props) => {
     const [breakTime,setBreakTime] = useState(0)
@@ -51,8 +52,9 @@ const List = (props) => {
             </div>
             <div className="break-time">
                 <h3>Break Time</h3>
-                <p>{breakTime}</p>
+                <p>{breakTime} seconds</p>
             </div>
+            <Toast></Toast>
         </div>
     );
 };
